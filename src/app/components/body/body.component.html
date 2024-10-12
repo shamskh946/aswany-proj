@@ -1,0 +1,15 @@
+
+
+<div class="restaurant-container" style="margin-left: 50px;">
+    <div class="restaurant-card" data-category="cafe" *ngFor="let cards of rest">
+        <div class="card h-100">
+            <img [src]="cards.imgurl" [alt]="cards.name">
+            <div class="card-info">
+                <h2> {{cards.name}} </h2>
+                <p>{{cards.description}}</p>
+                <div class="rating">{{cards.rating}}</div>
+                <a href="#" class="more-info">المزيد من المعلومات</a>
+            </div>
+        </div>
+    </div>
+</div>
